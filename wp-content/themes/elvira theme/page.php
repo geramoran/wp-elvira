@@ -62,75 +62,13 @@
 				</div>
 			</nav>
 		</header>
-		<div class="bloque-rojo">
-		</div>
-		<div class="col-lg-10 about-us" style="float: none; margin-right: auto; margin-left: auto; margin-bottom: 0; text-align: center;">
-			<h1 class="title">Casting</h1>
-			<div class="row" style="padding-bottom: 30px">
-				<iframe class="video-hero-noticias" src="https://player.vimeo.com/video/281020757" width="560" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			<br>
-			<div class="elvira-info">
-				<br>
-				<br>
-			<h2>Elvira Richards</h2>
-			<p>Directora de casting con más de 80 créditos en cine y televisión, entre ellos “El Estudiante”, “Campeones”, “MalaCopa”, “Nesio”, “Espiral”, “La Mitad del Mundo”, “Familia Gang”, “La Ruta Blanca”.
-			Galardonada con el premio “Pantalla de Cristal” por Mejor Dirección de Casting con la película “La Cebra”.</p>
-			<br>
-			<a href="#">Ver CV completo</a>
-			<br>
-			</div>
-			<br>
-			</div>
-			<div class="row">
-				<img src="img/elvira-casting/carousel-simulado.png" style="width: 100%; height: auto;">
-			</div>
-				<br>
-				<h2>contacto</h2>
-				<br>
-			<div class="row">
-				<div class="col-2"></div>
-					<div class="col-5 casting-data">
-						<p>Dinamarca #50-D, Col. Juárez
-						Delg. Cuauhtémoc C.P. 06600 CDMX
-						Tels. 2455-1954 y 3330-2694 </p>
-					</div>
-					<div class="col casting-redes">
-						<div class="socialnet sn-fb">
-							<img src="img/redes/facebook.svg"><p>Elvira Richards</p>
-						</div>
-						<div class="w-100"></div>
-						<div class="socialnet sn-tw">
-							<img src="img/redes/twitter.svg"><p>@ElviraRichards</p>
-						</div>
-						<div class="w-100"></div>
-						<div class="socialnet sn-ig">
-							<img src="img/redes/instagram.svg"><p>ElviraRichards</p>
-						</div>
-						<div class="w-100"></div>
-						<div class="socialnet sn-imdb">
-							<img src="img/redes/imdb.svg"><p>ElviraRichards</p>
-						</div>
-					</div>
-				<div class="col-2"></div>
-			</div>
-			<br><h2>Tráilers de Películas</h2><br>
-			<div class="row trailer-caja">
-				<div class="col trailers"><iframe src="https://www.youtube.com/embed/4r2bXXldY_I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-				<div class="col trailers"><iframe src="https://www.youtube.com/embed/XejBS35dB-w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-				<div class="col trailers"><iframe src="https://www.youtube.com/embed/PCrXZgrKAQ8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-				<div class="col trailers"><iframe src="https://www.youtube.com/embed/Gdu0hgQkkTE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-				<div class="col trailers"><iframe src="https://www.youtube.com/embed/pYe3aXuOoCo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-				<div class="col trailers"><iframe src="https://www.youtube.com/embed/mUIDwL6M0bg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-				<div class="col trailers"><iframe src="https://www.youtube.com/embed/tATzM5OKsoI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-				<div class="col trailers"><iframe src="https://www.youtube.com/embed/2CYw27C7woo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-			</div>
-		</div>
+		<div class="bloque-rojo"></div>
 		<footer class="footer-index">
 			<div class="container">
 				<hr align="right">
 				<div class="row">
 					<div class="col-lg-4 d-flex justify-content-around align-items-center">
-						<img src="img/SVG-logo/logo-vertical.svg" alt="Elvira Richards" width="186px" height="152px">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/SVG-logo/logo-vertical.svg" alt="Elvira Richards" width="186px" height="152px">
 					</div>
 					<div class="col-lg-4 d-flex justify-content-around align-items-center social-net">
 						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FElviraRichardsManagement%2F&tabs=timeline&width=340&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>

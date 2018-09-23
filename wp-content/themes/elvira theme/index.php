@@ -169,7 +169,7 @@
 			<hr text-align="right">
 			<div class="row">
 				<div class="col-lg-4 d-flex justify-content-around align-items-center">
-					<img src="img/SVG-logo/logo-vertical.svg" alt="Elvira Richards" width="186px" height="152px">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/SVG-logo/logo-vertical.svg" alt="Elvira Richards" width="186px" height="152px">
 				</div>
 				<div class="col-lg-4 d-flex justify-content-around align-items-center social-net">
 					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FElviraRichardsManagement%2F&tabs=timeline&width=340&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>

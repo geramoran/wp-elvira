@@ -52,4 +52,43 @@
 		return $classes;
 	}
 	add_filter('nav_menu_css_class','add_classes_on_li',1,3);
+
+	add_action( 'init', 'elvira_management' );
+	function elvira_management() {
+		$labels = array(
+			'name'               => _x( 'Management', 'elvira' ),
+			'singular_name'      => _x( 'Management', 'post type singular name', 'elvira' ),
+			'menu_name'          => _x( 'Management', 'admin menu', 'elvira' ),
+			'name_admin_bar'     => _x( 'Management', 'add new on admin bar', 'elvira' ),
+			'add_new'            => _x( 'Add actor/actriz', 'book', 'elvira' ),
+			'add_new_item'       => __( 'Add nuevo actor/actriz', 'elvira' ),
+			'new_item'           => __( 'Nuevo actor/actriz', 'elvira' ),
+			'edit_item'          => __( 'Editar actor/actriz', 'elvira' ),
+			'view_item'          => __( 'Ver actor/actriz', 'elvira' ),
+			'all_items'          => __( 'Todos los Actores/actrices', 'elvira' ),
+			'search_items'       => __( 'Buscar actores/actrices', 'elvira' ),
+			'parent_item_colon'  => __( 'Actor/Actriz principal', 'elvira' ),
+			'not_found'          => __( 'Sin actores/actrices.', 'elvira' ),
+			'not_found_in_trash' => __( 'Sin actores/actrices en la basura.', 'elvira' )
+		);
+
+		$args = array(
+			'labels'             => $labels,
+	    	'description'        => __( 'Descripción.', 'elvira' ),
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'management' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 6,
+			'supports'           => array( 'title', 'editor', 'thumbnail' ),
+	    	'taxonomies'          => array( 'category' ),
+		);
+
+		register_post_type( 'management', $args );
+	}
 ?>
