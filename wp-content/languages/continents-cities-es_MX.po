@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development - Continents & Cities package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-07-31 15:12:02+0000\n"
+"PO-Revision-Date: 2018-09-20 19:58:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,23 +13,23 @@ msgstr ""
 
 #: wp-admin/includes/continents-cities.php:478
 msgid "Saratov"
-msgstr ""
+msgstr "Saratov"
 
 #: wp-admin/includes/continents-cities.php:353
 msgid "Yangon"
-msgstr ""
+msgstr "Yangon"
 
 #: wp-admin/includes/continents-cities.php:287
 msgid "Famagusta"
-msgstr ""
+msgstr "Famagusta"
 
 #: wp-admin/includes/continents-cities.php:266
 msgid "Atyrau"
-msgstr ""
+msgstr "Atyrau"
 
 #: wp-admin/includes/continents-cities.php:204
 msgid "Punta Arenas"
-msgstr ""
+msgstr "Punta Arenas"
 
 #: wp-admin/includes/continents-cities.php:542
 msgid "Pohnpei"

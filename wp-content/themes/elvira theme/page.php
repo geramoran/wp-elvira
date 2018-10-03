@@ -1,11 +1,3 @@
-<!--
-		<link rel="stylesheet" href="css/bootstrap-grid.css">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap-reboot.css">
-		<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
--->
 <?php get_header(); ?>
 	</head>
 	<body>
@@ -30,25 +22,6 @@
 					<button id="buttonResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="" data-target="#navbarSidebar" aria-controls="navbarSidebar" aria-expanded="false" aria-label="Toggle navigation"> 
 	          			<span class="navbar-toggler-icon"></span>
 	        		</button>
-					<!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="nav navbar-nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.html" title="">Inicio</a></li>
-							<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="management.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="">Management</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="management.html">Actrices</a>
-									<a class="dropdown-item" href="management.html">Actores</a>
-									<a class="dropdown-item" href="management.html">Talento Joven</a>
-									<a class="dropdown-item" href="management.html">Internacional</a>
-									<a class="dropdown-item" href="management.html">Más Talento</a>
-								</div>
-		     				</li>
-							<li class="nav-item"><a class="nav-link" href="casting.html" title="">Casting</a></li>
-							<li class="nav-item"><a class="nav-link" href="talleres.html" title="">Talleres</a></li>
-							<li class="nav-item"><a class="nav-link" href="servicios.html" title="">Servicios</a></li>
-							<li class="nav-item"><a class="nav-link" href="noticias.html" title="">Noticias</a></li>
-							<li class="nav-item"><a class="nav-link" href="contacto.html" title="">Contacto</a></li>
-						</ul>
-					</div>-->
 					<?php
 						$args = array(
 							'theme_location' => 'header_root',
@@ -102,10 +75,4 @@
 				</div>
 			</div>
 		</footer>
-<!--
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
--->
 <?php get_footer(); ?>
