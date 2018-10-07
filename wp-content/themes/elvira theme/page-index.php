@@ -73,17 +73,14 @@
 						while ($allPersonas->have_posts()) : $allPersonas->the_post();
 					?>
 					<div class="man-item">
-						<img src="
-							<?php 
-								echo the_field('thumbnail');
-							?>">
-						<div class="text">
-							<div class="text2">
-								<?php 
-									the_field('nombre'); 
-								?>		
-							</div> 
-						</div>
+						<a href="<?php the_permalink(); ?>">
+							<img src="<?php echo the_field('thumbnail');?>">
+							<div class="text">
+								<div class="text2"> 
+									<?php the_field('nombre'); ?>		
+								</div> 
+							</div>
+						</a>
 					</div>
 					<?php
 						endwhile;

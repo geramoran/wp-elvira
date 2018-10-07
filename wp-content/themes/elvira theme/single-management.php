@@ -36,32 +36,40 @@
 			</nav>
 		</header>
 		<div class="bloque-rojo"></div>
-				<div class="col-lg-10 about-us" style="float: none; margin-right: auto; margin-left: auto; margin-bottom: 0; text-align: center;">
+		<div class="col-lg-10 about-us" style="float: none; margin-right: auto; margin-left: auto; margin-bottom: 0; text-align: center;">
+			<?php
+				$args = array(
+					'post_type' => 'management'
+				);
+				$allPersonas = new WP_Query( $args );
+				while ($allPersonas->have_posts()) : $allPersonas->the_post();
+			?>
+
 			<div class="container actor-container">
 				<div class="row">
 					<!--IMG Actor-->
 					<div class="col-span-4 slider-for slider">
-						<div><img src="img/actores curado/HECTOR KOTSIFAKIS 3.jpg"></div>
+						<div><img src="<?php echo the_field('thumbnail');?>"></div>
 					</div>
 					<!--/End/ IMG Actor-->
 					<div class="col-4 slider-change-1">
 						<div class="slider-nav slider">
-							<div><img src="img/actores curado/HECTOR KOTSIFAKIS 3.jpg"></div>
+							<div><img src="<?php echo the_field('thumbnail');?>"></div>
 						</div>
 					</div>
 					<div class="col-8 taller-info actor-info">
-						<h2>Héctor Kotsifakis</h2>
-						<p class="taller-descripcion">Most people consider hair combing a routine activity. There are people who keep a particular hair style throughout their life. On the other hand, younger generations adopt new hair styles according to new trends. To have a healthy hair, proper nutrition is required. General health has direct relation with the quality and quantity of hair. In order to make your hair beautiful, you need regular washing, use of hair oil, proper combing, etc.</p>
-						<a href="#">Ver CV completo</a>
-						<!--inicia div de carrusel-->
-						<div class="slider-nav slider slider-change-2">
-							<div><img src="img/actores curado/HECTOR KOTSIFAKIS 3.jpg"></div>
-						</div>
-						<!--termina div de carrusel-->
+					<h2><?php the_field('nombre'); ?></h2>
+					<p class="taller-descripcion">Most people consider hair combing a routine activity. There are people who keep a particular hair style throughout their life. On the other hand, younger generations adopt new hair styles according to new trends. To have a healthy hair, proper nutrition is required. General health has direct relation with the quality and quantity of hair. In order to make your hair beautiful, you need regular washing, use of hair oil, proper combing, etc.</p>
+					<a href="#">Ver CV completo</a>
+					<!--inicia div de carrusel-->
+					<div class="slider-nav slider slider-change-2">
+						<div><img src="img/actores curado/HECTOR KOTSIFAKIS 3.jpg"></div>
+					</div>
+					<!--termina div de carrusel-->
 					</div>
 					<div class="col-md-8 slider-change-3">
 						<div class="slider-nav slider">
-							<div><img src="img/actores curado/HECTOR KOTSIFAKIS 3.jpg"></div>
+							<div><<?php echo the_field('thumbnail');?>"></div>
 						</div>
 					</div>
 				</div>
@@ -69,6 +77,11 @@
 					<iframe src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</div>
+
+			<?php
+				endwhile;
+				wp_reset_postdata();
+			?>
 		</div>
 		<footer class="footer-index">
 			<div class="container">
