@@ -1,0 +1,13 @@
+[19-Oct-2018 01:21:27 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wp-elvira\wp-includes\pomo\streams.php on line 145
+[19-Oct-2018 07:24:00 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php:7
+Stack trace:
+#0 C:\xampp\htdocs\wp-elvira\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\wp-elvira\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp-elvira\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 7
+[19-Oct-2018 07:24:31 UTC] PHP Recoverable fatal error:  Object of class WP_Taxonomy could not be converted to string in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 7
+[19-Oct-2018 08:03:15 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 7
+[19-Oct-2018 16:24:00 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wp-elvira\wp-content\plugins\contact-form-7\modules\text.php on line 12
+[20-Oct-2018 08:58:17 UTC] PHP Parse error:  syntax error, unexpected ',' in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 19
+[20-Oct-2018 04:46:18 UTC] PHP Recoverable fatal error:  Object of class WP_Term could not be converted to string in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 14

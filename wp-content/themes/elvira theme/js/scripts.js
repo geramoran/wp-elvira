@@ -49,3 +49,7 @@ $('#menu-principal a.nav-link:contains("Management")').on('click', function() {
 		$('a.nav-link:contains("Management")').siblings('.sub-menu').css('display', 'block');
 	}
 });
+
+var titleTalent = $('.about-us .title-tax a').text();
+$('.about-us .title-tax a').remove();
+$('.about-us .title-tax').html(titleTalent);

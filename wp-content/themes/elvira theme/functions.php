@@ -55,13 +55,24 @@
 
 	add_action( 'init', 'elvira_management' );
 	function elvira_management() {
+		register_taxonomy(
+		    'management',
+		    'post',
+		    array(
+				'label' => __('Talento'),
+				'sort' => true,
+				'rewrite' => array('slug' => 'management_tax'),
+				'hierarchical' => true,
+		    )
+		 );
+
 		$labels = array(
 			'name'               => _x( 'Management', 'elvira' ),
 			'singular_name'      => _x( 'Management', 'post type singular name', 'elvira' ),
 			'menu_name'          => _x( 'Management', 'admin menu', 'elvira' ),
 			'name_admin_bar'     => _x( 'Management', 'add new on admin bar', 'elvira' ),
-			'add_new'            => _x( 'Add actor/actriz', 'book', 'elvira' ),
-			'add_new_item'       => __( 'Add nuevo actor/actriz', 'elvira' ),
+			'add_new'            => _x( 'Agregar actor/actriz', 'book', 'elvira' ),
+			'add_new_item'       => __( 'Nuevo actor/actriz', 'elvira' ),
 			'new_item'           => __( 'Nuevo actor/actriz', 'elvira' ),
 			'edit_item'          => __( 'Editar actor/actriz', 'elvira' ),
 			'view_item'          => __( 'Ver actor/actriz', 'elvira' ),
@@ -80,16 +91,55 @@
 			'show_ui'            => true,
 			'show_in_menu'       => true,
 			'query_var'          => true,
-			'rewrite'            => array( 'slug' => 'management' ),
+			'rewrite'            => array( 'slug' => 'management_detail' ),
 			'capability_type'    => 'post',
 			'has_archive'        => true,
 			'hierarchical'       => false,
 			'menu_position'      => 6,
 			'supports'           => array( 'title' ),
-	    	'taxonomies'          => array( 'category' ),
+	    	'taxonomies'         => array( 'management' ),
 		);
 
-		register_post_type( 'management', $args );
+		register_post_type( 'management_detail', $args );
 	}
+
+	add_action( 'init', 'elvira_services' );
+	function elvira_services() {
+		$labels = array(
+			'name'               => _x( 'Servicios', 'elvira' ),
+			'singular_name'      => _x( 'Servicios', 'post type singular name', 'elvira' ),
+			'menu_name'          => _x( 'Servicios', 'admin menu', 'elvira' ),
+			'name_admin_bar'     => _x( 'Servicios', 'add new on admin bar', 'elvira' ),
+			'add_new'            => _x( 'Agregar Nuevo servicio', 'book', 'elvira' ),
+			'add_new_item'       => __( 'Nuevo servicio', 'elvira' ),
+			'new_item'           => __( 'Nuevo servicio', 'elvira' ),
+			'edit_item'          => __( 'Editar servicio', 'elvira' ),
+			'view_item'          => __( 'Ver servicio', 'elvira' ),
+			'all_items'          => __( 'Todos los servicios', 'elvira' ),
+			'search_items'       => __( 'Buscar servicios', 'elvira' ),
+			'parent_item_colon'  => __( 'servicio principal', 'elvira' ),
+			'not_found'          => __( 'Sin servicios.', 'elvira' ),
+			'not_found_in_trash' => __( 'Sin servicios en la basura.', 'elvira' )
+		);
+
+		$args = array(
+			'labels'             => $labels,
+	    	'description'        => __( 'Descripción.', 'elvira' ),
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'servicios_detail' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 6,
+			'supports'           => array( 'title' ),
+		);
+
+		register_post_type( 'servicios_detalle', $args );
+	}
+	
 	flush_rewrite_rules();
 ?>
