@@ -53,6 +53,12 @@
 	}
 	add_filter('nav_menu_css_class','add_classes_on_li',1,3);
 
+	add_filter( 'upload_mimes', 'custom_upload_mimes' );
+	function custom_upload_mimes( $existing_mimes = array() ) {
+		$existing_mimes['svg'] = 'image/svg+xml';
+		return $existing_mimes;
+	}
+
 	add_action( 'init', 'elvira_management' );
 	function elvira_management() {
 		register_taxonomy(
@@ -140,6 +146,154 @@
 
 		register_post_type( 'servicios_detalle', $args );
 	}
+
+	add_action( 'init', 'elvira_social' );
+	function elvira_social() {
+		$labels = array(
+			'name'               => _x( 'Redes sociales Elvira', 'elvira' ),
+			'singular_name'      => _x( 'Redes sociales Elvira', 'post type singular name', 'elvira' ),
+			'menu_name'          => _x( 'Redes sociales Elvira', 'admin menu', 'elvira' ),
+			'name_admin_bar'     => _x( 'Redes sociales Elvira', 'add new on admin bar', 'elvira' ),
+			'add_new'            => _x( 'Agregar Nueva red social', 'book', 'elvira' ),
+			'add_new_item'       => __( 'Nueva red social', 'elvira' ),
+			'new_item'           => __( 'Nueva red social', 'elvira' ),
+			'edit_item'          => __( 'Editar red social', 'elvira' ),
+			'view_item'          => __( 'Ver red social', 'elvira' ),
+			'all_items'          => __( 'Todas las redes sociales', 'elvira' ),
+			'search_items'       => __( 'Buscar red social', 'elvira' ),
+			'not_found'          => __( 'Sin red social.', 'elvira' ),
+			'not_found_in_trash' => __( 'Sin redes sociales en la basura.', 'elvira' )
+		);
+
+		$args = array(
+			'labels'             => $labels,
+	    	'description'        => __( 'Descripción.', 'elvira' ),
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'socialred_elvira' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 6,
+			'supports'           => array( 'title' ),
+		);
+
+		register_post_type( 'socialred_detalle', $args );
+	}
 	
+	add_action( 'init', 'elvira_trailers' );
+	function elvira_trailers() {
+		$labels = array(
+			'name'               => _x( 'Trailers Elvira', 'elvira' ),
+			'singular_name'      => _x( 'Trailers Elvira', 'post type singular name', 'elvira' ),
+			'menu_name'          => _x( 'Trailers Elvira', 'admin menu', 'elvira' ),
+			'name_admin_bar'     => _x( 'Trailers Elvira', 'add new on admin bar', 'elvira' ),
+			'add_new'            => _x( 'Agregar Nuevo Trailer', 'book', 'elvira' ),
+			'add_new_item'       => __( 'Nuevo Trailer', 'elvira' ),
+			'new_item'           => __( 'Nuevo Trailer', 'elvira' ),
+			'edit_item'          => __( 'Editar Trailer', 'elvira' ),
+			'view_item'          => __( 'Ver Trailer', 'elvira' ),
+			'all_items'          => __( 'Todas los Trailers', 'elvira' ),
+			'search_items'       => __( 'Buscar Trailer', 'elvira' ),
+			'not_found'          => __( 'Sin Trailer.', 'elvira' ),
+			'not_found_in_trash' => __( 'Sin Trailer en la basura.', 'elvira' )
+		);
+
+		$args = array(
+			'labels'             => $labels,
+	    	'description'        => __( 'Descripción.', 'elvira' ),
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'trailer_elvira' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 6,
+			'supports'           => array( 'title' ),
+		);
+
+		register_post_type( 'trailer_elvira', $args );
+	}
+
+	add_action( 'init', 'elvira_taller' );
+	function elvira_taller() {
+		$labels = array(
+			'name'               => _x( 'Taller', 'elvira' ),
+			'singular_name'      => _x( 'Taller', 'post type singular name', 'elvira' ),
+			'menu_name'          => _x( 'Taller', 'admin menu', 'elvira' ),
+			'name_admin_bar'     => _x( 'Taller', 'add new on admin bar', 'elvira' ),
+			'add_new'            => _x( 'Agregar Nuevo Taller', 'book', 'elvira' ),
+			'add_new_item'       => __( 'Nuevo Taller', 'elvira' ),
+			'new_item'           => __( 'Nuevo Taller', 'elvira' ),
+			'edit_item'          => __( 'Editar Taller', 'elvira' ),
+			'view_item'          => __( 'Ver Taller', 'elvira' ),
+			'all_items'          => __( 'Todos los Talleres', 'elvira' ),
+			'search_items'       => __( 'Buscar Taller', 'elvira' ),
+			'not_found'          => __( 'Sin Taller.', 'elvira' ),
+			'not_found_in_trash' => __( 'Sin Taller en la basura.', 'elvira' )
+		);
+
+		$args = array(
+			'labels'             => $labels,
+	    	'description'        => __( 'Descripción.', 'elvira' ),
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'taller_info' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 6,
+			'supports'           => array( 'title' ),
+		);
+
+		register_post_type( 'taller_info', $args );
+	}
+
+	add_action( 'init', 'elvira_noticia' );
+	function elvira_noticia() {
+		$labels = array(
+			'name'               => _x( 'Noticias', 'elvira' ),
+			'singular_name'      => _x( 'Noticias', 'post type singular name', 'elvira' ),
+			'menu_name'          => _x( 'Noticias', 'admin menu', 'elvira' ),
+			'name_admin_bar'     => _x( 'Noticias', 'add new on admin bar', 'elvira' ),
+			'add_new'            => _x( 'Agregar Nueva Noticia', 'book', 'elvira' ),
+			'add_new_item'       => __( 'Nueva Noticias', 'elvira' ),
+			'new_item'           => __( 'Nueva Noticia', 'elvira' ),
+			'edit_item'          => __( 'Editar Noticia', 'elvira' ),
+			'view_item'          => __( 'Ver Noticia', 'elvira' ),
+			'all_items'          => __( 'Todas las Noticias', 'elvira' ),
+			'search_items'       => __( 'Buscar Noticia', 'elvira' ),
+			'not_found'          => __( 'Sin Noticia.', 'elvira' ),
+			'not_found_in_trash' => __( 'Sin Noticia en la basura.', 'elvira' )
+		);
+
+		$args = array(
+			'labels'             => $labels,
+	    	'description'        => __( 'Descripción.', 'elvira' ),
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'noticia_detalle' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 6,
+			'supports'           => array( 'title', 'editor', 'author', 'post-thumbnail'),
+		);
+
+		register_post_type( 'noticia_detalle', $args );
+	}
+
 	flush_rewrite_rules();
 ?>

@@ -5,7 +5,7 @@
 			<br><br>
 			<?php
 				$args = array(
-					'post_type' => 'services'
+					'post_type' => 'servicios_detalle'
 				);
 				$allPersonas = new WP_Query( $args );
 				while ($allPersonas->have_posts()) : $allPersonas->the_post();
