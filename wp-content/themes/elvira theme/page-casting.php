@@ -19,13 +19,13 @@
 				</div>
 				<br>
 			</div>
-			<div class="row">
+			<div class="row slider-elvira">
 				<?php
 					$carrousel = acf_photo_gallery('cartelera', $post->ID);
 					if (count($carrousel)):
 						foreach ($carrousel as $imagen):
 							?>
-								<img src="<?php echo $imagen['full_image_url'];?>" style="width: 100%; height: auto;">
+								<div><img src="<?php echo $imagen['full_image_url'];?>" style="width: 100%; height: auto;"></div>
 							<?php
 						endforeach;
 					endif;
@@ -48,7 +48,12 @@
 						while ($allnet->have_posts()) : $allnet->the_post();
 					?>
 					<div class="socialnet">
-						<a href="<?php echo the_field('url') ?>" ><img src="<?php echo the_field('icono'); ?>"><p><?php echo the_field('socialnet_name'); ?></p></a>
+						<?php
+							$target = get_field('target');
+							if($target == "ambos" || $target == "casting"): ?>
+								<a href="<?php echo the_field('url'); ?>" ><img src="<?php echo the_field('icono'); ?>"><p><?php echo the_field('socialnet_name'); ?> </p></a>
+							<?php endif; 
+						?>
 					</div>
 					<?php
 						endwhile;

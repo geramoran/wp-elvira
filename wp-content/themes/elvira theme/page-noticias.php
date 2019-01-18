@@ -16,7 +16,7 @@
 					<div class="card-body">
 						<h5 class="card-title"><?php echo the_title(); ?></h5>
 						<h6 class="noticias-fecha"><?php echo the_date(); ?></h6>
-						<p class="card-text"><?php echo wp_trim_words( get_the_content(), 25 , "..."); ?></p>
+						<p class="card-text"><?php echo wp_trim_words(get_the_content(), 25 , "..."); ?></p>
 						<a href="<?php echo the_permalink(); ?>">Ver más >></a>
 					</div>
 				</div>

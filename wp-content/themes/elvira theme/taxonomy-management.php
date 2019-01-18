@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+ <?php get_header(); ?>
 		<div class="bloque-rojo no-bloque-rojo"></div>
 		<?php 
 			while (have_posts()): the_post();

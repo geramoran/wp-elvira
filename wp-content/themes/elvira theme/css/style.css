@@ -415,11 +415,11 @@ hr{
 
 .casting-redes p{
 	display: inline;
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
 .casting-redes img{
-	padding-top: 5px;
+	/*padding-top: 5px;*/
 }
 
 .casting-data {
@@ -429,7 +429,6 @@ hr{
 }
 
 .trailers iframe{
-
 	width: 220px;
 	height: auto;
 }
@@ -601,7 +600,7 @@ hr{
 	width: 100%;
 }
 
-.btn {
+.btn, .wpcf7-submit {
 	/* Rectangle 3: */
 	border: 1px solid #A9880F;
 	background-color: transparent;

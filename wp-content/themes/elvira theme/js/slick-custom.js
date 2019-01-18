@@ -46,3 +46,45 @@ $('.slider-nav').slick({
 		}
 	]
 });
+
+$('.slider-elvira').slick({
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	dots: false,
+	infinity: false,
+	responsive: [
+		{
+			breakpoint: 1086,
+			settings:{
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: false,
+				focusOnSelect: true,
+				infinity: false,
+				centerMode: true
+			}
+		},
+		{
+			breakpoint: 992,
+			settings:{
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: false,
+				focusOnSelect: true,
+				infinity: false,
+				centerMode: true
+			}
+		},
+		{
+			breakpoint: 768,
+			settings:{
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: false,
+				focusOnSelect: true,
+				infinity: false,
+				centerMode: true
+			}
+		}
+	]
+});

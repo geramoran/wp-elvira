@@ -40,7 +40,7 @@
 					<h2><?php the_field('nombre_actor'); ?></h2>
 					<p class="taller-descripcion"><?php echo the_field('descripcion');?></p>
 					<br>
-					<a href="<?php echo get_template_directory_uri() . "/cv/" . $post->ID . ".php" ;?>">Ver CV completo</a>
+					<a href="<?php echo the_permalink() . "cv/?post_id=" . $post->ID;?>">Ver CV completo</a>
 					<!--inicia div de carrusel-->
 					<div class="slider-nav slider slider-change-2">
 						<div><img src="<?php echo the_field('thumbnail');?>"></div>

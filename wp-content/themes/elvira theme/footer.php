@@ -26,12 +26,26 @@
 						<img class="footer-alinear" src="img/redes/instagram.svg">
 					-->
 					<?php
-						$args = array(
+						/*$args = array(
 							'theme_location' => 'social',
 							'container' => 'img',
 							'container_class' => 'footer-alinear'
 						);
-						wp_nav_menu($args);
+						wp_nav_menu($args);*/
+						$args = array(
+							'post_type' => 'socialred_detalle'
+						);
+						$allnet = new WP_Query( $args );
+						while ($allnet->have_posts()) : 
+							$allnet->the_post();
+							$target = get_field('target');
+							if($target == "ambos" || $target == "pages"):
+								?>
+									<a href="<?php echo the_field('url'); ?>"><img class="footer-alinear" src="<?php echo the_field('icono'); ?>"></a>
+								<?php
+							endif;
+						endwhile;
+						wp_reset_postdata();
 					?>
 					</div>
 				</div>
