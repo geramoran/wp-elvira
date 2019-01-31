@@ -438,6 +438,7 @@ hr {
 }
 
 .casting-data {
+    color: #DFDFDF;
     display: flex;
     justify-content: center;
     align-items: center;
