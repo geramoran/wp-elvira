@@ -17,7 +17,7 @@
 							echo the_field('video');
 						endif;?>
 						<?php if (get_field('visualizar') == 'cartel'):
-							?> <img src=" <?php echo the_field('cartel'); ?>"><?php
+							?> <img src=" <?php echo the_field('cartel'); ?>" height="195px"><?php
 						endif;?>
 					</div>
 					<div class="col-8 taller-info">
