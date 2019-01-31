@@ -228,7 +228,7 @@ a.nav-link, a.parent{
 
 .management .man-item:hover .text{
 	transition: all .5s ease-in-out;
-	background-color: #551515cc;
+	/*background-color: #551515cc; --Cambio pedido por sinai*/
 	color: #fff;
 	opacity: 1;
 }
