@@ -293,7 +293,14 @@
 		);
 
 		register_post_type( 'noticia_detalle', $args );
+	}	
+
+	function custom_query_vars_filter($vars) {
+		$vars[] .= 'actores';
+		$vars[] .= 'actrices';
+		return $vars;
 	}
+	add_filter( 'query_vars', 'custom_query_vars_filter' );
 
 	flush_rewrite_rules();
 ?>

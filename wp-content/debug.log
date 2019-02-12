@@ -6618,3 +6618,35 @@ Stack trace:
 [07-Nov-2018 00:43:02 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wp-elvira\wp-content\plugins\contact-form-7\modules\recaptcha.php on line 3
 [07-Nov-2018 00:55:21 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wp-elvira\wp-content\plugins\advanced-custom-fields\includes\form.php on line 3
 [31-Jan-2019 06:31:25 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wp-elvira\wp-includes\Requests\Transport\cURL.php on line 463
+[04-Feb-2019 01:07:22 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No se puede establecer una conexi�n ya que el equipo de destino deneg� expresamente dicha conexi�n.
+ in C:\xampp\htdocs\wp-elvira\wp-includes\wp-db.php on line 1531
+[12-Feb-2019 04:52:19 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\wp-elvira\wp-includes\wp-db.php on line 1531
+[12-Feb-2019 05:24:07 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wp-elvira\wp-admin\includes\class-wp-filesystem-direct.php on line 76
+[12-Feb-2019 05:54:33 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting end of file in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 40
+[12-Feb-2019 06:40:43 UTC] PHP Notice:  Undefined index: term in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 6
+[12-Feb-2019 06:55:47 UTC] PHP Notice:  Undefined variable: titulo in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 5
+[12-Feb-2019 07:01:22 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 5
+[12-Feb-2019 07:01:43 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 5
+[12-Feb-2019 07:02:29 UTC] PHP Notice:  Trying to get property 'management' of non-object in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 4
+[12-Feb-2019 07:02:40 UTC] PHP Notice:  Trying to get property 'management' of non-object in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 4
+[12-Feb-2019 07:03:02 UTC] PHP Notice:  Trying to get property 'management' of non-object in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 4
+[12-Feb-2019 07:03:36 UTC] PHP Notice:  Trying to get property 'management' of non-object in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 5
+[12-Feb-2019 07:03:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function management() on array in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php:5
+Stack trace:
+#0 C:\xampp\htdocs\wp-elvira\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\wp-elvira\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp-elvira\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 5
+[12-Feb-2019 07:04:47 UTC] PHP Notice:  Trying to get property 'management' of non-object in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 5
+[12-Feb-2019 07:05:31 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 5
+[12-Feb-2019 07:05:46 UTC] PHP Notice:  Trying to get property 'management' of non-object in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 5
+[12-Feb-2019 07:06:42 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php:5
+Stack trace:
+#0 C:\xampp\htdocs\wp-elvira\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\wp-elvira\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wp-elvira\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 5
+[12-Feb-2019 07:07:08 UTC] PHP Warning:  Use of undefined constant management - assumed 'management' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 5
+[12-Feb-2019 07:14:03 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\wp-elvira\wp-content\themes\elvira theme\taxonomy-management.php on line 4
