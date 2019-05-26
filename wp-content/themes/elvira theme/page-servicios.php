@@ -11,7 +11,9 @@
 				while ($allPersonas->have_posts()) : $allPersonas->the_post();
 			?>
 			<div>
-				<img class="logo-servicios" src="<?php the_field('foto_destacada'); ?>">
+				<a href="<?php the_field('page'); ?>">
+					<img class="logo-servicios" src="<?php the_field('foto_destacada'); ?>">
+				</a>
 				<h2><?php the_title(); ?></h2>
 				<br>
 				<p class="servicios-texto"><?php the_field('descripcion'); ?></p>

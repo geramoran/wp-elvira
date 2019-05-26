@@ -1,90 +1,89 @@
 $('.slider-for').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	arrows: false,
-	fade: true,
-	asNavFor: '.slider-nav'
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
 });
 
 $('.slider-nav').slick({
-	slidesToShow: 6,
-	slidesToScroll: 1,
-	asNavFor: '.slider-for',
-	dots: false,
-	infinity: false,
-	focusOnSelect: true,
-	responsive: [
-		{
-			breakpoint: 1086,
-			settings:{
-				slidesToShow: 5,
-				slidesToScroll: 1,
-				dots: false,
-				focusOnSelect: true,
-				infinity: false
-			}
-		},
-		{
-			breakpoint: 992,
-			settings:{
-				slidesToShow: 4,
-				slidesToScroll: 1,
-				dots: false,
-				focusOnSelect: true,
-				infinity: false
-			}
-		},
-		{
-			breakpoint: 768,
-			settings:{
-				slidesToShow: 5,
-				slidesToScroll: 1,
-				dots: false,
-				focusOnSelect: true,
-				infinity: false
-			}
-		}
-	]
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    infinity: false,
+    focusOnSelect: true,
+    responsive: [{
+            breakpoint: 1086,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                dots: false,
+                focusOnSelect: true,
+                infinity: false
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: false,
+                focusOnSelect: true,
+                infinity: false
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                dots: false,
+                focusOnSelect: true,
+                infinity: false
+            }
+        }
+    ]
 });
 
 $('.slider-elvira').slick({
-	slidesToShow: 5,
-	slidesToScroll: 1,
-	dots: false,
-	infinity: false,
-	responsive: [
-		{
-			breakpoint: 1086,
-			settings:{
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				dots: false,
-				focusOnSelect: true,
-				infinity: false,
-				centerMode: true
-			}
-		},
-		{
-			breakpoint: 992,
-			settings:{
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				dots: false,
-				focusOnSelect: true,
-				infinity: false,
-				centerMode: true
-			}
-		},
-		{
-			breakpoint: 768,
-			settings:{
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				dots: false,
-				focusOnSelect: true,
-				infinity: false,
-				centerMode: true
-			}
-		}
-	]
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    infinity: false,
+    adaptiveHeight: true,
+    responsive: [{
+            breakpoint: 1086,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                focusOnSelect: true,
+                infinity: false,
+                centerMode: true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                focusOnSelect: true,
+                infinity: false,
+                centerMode: true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                focusOnSelect: true,
+                infinity: false,
+                centerMode: true
+            }
+        }
+    ]
 });

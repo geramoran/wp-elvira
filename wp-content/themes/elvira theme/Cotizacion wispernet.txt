@@ -1,0 +1,53 @@
+Objetivos de la pagina:
+    - Un nuevo diseño de pagina para Wispernet.com.mx y definir estructura de contenido a ofrecer
+    - Funciones de la página:
+        * Contratar servicios y pagar suscripciones
+        * Creacion de usuarios (peticion de creacion de cuentas o generador automatica de cuentas de usuario)
+        * Administracion de los servicios de parte del usuario e informacion relacionada
+        * Enlaces a los servicios adicionales
+        * Administracion de capital humano (Recursos humanos)
+ 
+Plan de diseño:
+- Diseño de una nueva pagina desde cero:
+    * Separamos la parte informativa de la pagina con las funciones de parte de potenciales clientes, parte de cliente definido (usuario), parte del administrador
+    * Va a ser propuesto una estructura de diseño de pagina para realizar la plantilla del sitio (indepediente de las tecnologias a usar)
+    * Definicion de las estructuras dinamicas para el llenado automatico de contenido
+
+Planes de desarrollo:
+Plan 1:
+- Uso de wordpress para contenido dinamico en la pagina (de acuerdo a la plantilla)
+- Creacion de plantilla desde cero en base al plan de diseño hecho
+- Modulos para llenado de contenido dinamico (de acuerdo a plantilla)
+- Blog dentro de la pagina
+- Administracion de usuarios a la plataforma y asignacion de servicios
+- Plataforma de usuarios asignados para gestion de datos de usuarios y mostrar informacion relevante sobre sus servicios contratados
+- Administracion de enlaces a servicios externos, dependiendo del usuario
+* Venta de servicios usando plataforma de ecommerce como prestashop, woocommerce o shopify integrado al wordpress
+* Busqueda de plugins para administracion de capital humano(recursos humanos)
+
+Plan 2:
+- Creacion a cero de un gestor de contenido (de acuerdo a plantilla) y separar pagina web de la administracion de la pagina
+- Creacion de modulos personalizador para llenado de contenido dinamico
+- Creacion de blog
+- Administracion de usuarios a la plataforma y asignacion de servicios
+- Plataforma de usuarios asignados para gestion de datos de usuarios y mostrar informacion relevante sobre sus servicios contratados
+- Administracion de enlaces a servicios externos, dependiendo del usuario
+* Venta de servicios usando plataforma de ecommerce como prestashop, woocommerce o shopify integrado al wordpress
+* Busqueda de solucion para administracion de capital humano(recursos humanos)
+
+Tiempos de desarrollo:
+Plan 1:
+- Descarga e instalacion de wordpress
+- Creacion de plantilla (depende del diseño)
+- Crear la gestion del contenido dinamico
+- Uso de libreria para gestion de contenido
+- Busqueda e implementacion de plugin para la gestion del usuario
+
+Plan 2:
+- Creacion de la plantilla (front end)
+- Calculo del contenido dinamico
+- Creacion del modelo para la administracion de la pagina
+- Creacion de los modulos de administracion para el contenido dinamico
+- Conexion de los datos dinamicos de la pagina hacia el front-end
+- Creacion de usuarios para la plataforma de administracion
+- Creacion de la plataforma de usuarios

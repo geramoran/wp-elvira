@@ -81,6 +81,7 @@ define('WP_DEBUG', true);
 define('WP_DEBUG_LOG', true);
 define('WP_DEBUG_DISPLAY', true);
 
+set_time_limit (120);
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */

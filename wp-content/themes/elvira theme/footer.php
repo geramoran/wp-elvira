@@ -39,7 +39,7 @@
 						while ($allnet->have_posts()) : 
 							$allnet->the_post();
 							$target = get_field('target');
-							if($target == "ambos" || $target == "pages"):
+							if($target == "ambos" || $target == "page"):
 								?>
 									<a href="<?php echo the_field('url'); ?>"><img class="footer-alinear" src="<?php echo the_field('icono'); ?>"></a>
 								<?php

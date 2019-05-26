@@ -24,10 +24,9 @@
 		  			</a>
 				</div>
 				<div class="col-lg-10 about-us" style="float: none; margin-right: auto; margin-left: auto; margin-bottom: 0;">
-					<h1 class="title">Nosotros</h1>
+					<h1 class="title"><?php echo the_field('indexTitle'); ?></h1>
 					<br><br>
-					<p>"Everything you can imagine is real"</p>
-					<p class="Picasso"><i>—Pablo Picasso</i></p>
+					<p><?php echo the_field('description'); ?></p>
 				</div>
 				<div class="container management">
 					<div class="d-flex justify-content-start align-items-center flex-wrap">

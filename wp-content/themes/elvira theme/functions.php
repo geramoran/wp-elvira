@@ -302,5 +302,7 @@
 	}
 	add_filter( 'query_vars', 'custom_query_vars_filter' );
 
+	add_theme_support( 'title-tag' );
+
 	flush_rewrite_rules();
 ?>
