@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Force)",
+      "Bash(Select-Object -First 30)",
+      "Bash(git -C \"C:\\\\Users\\\\gera-\\\\Documents\\\\GitHub\\\\wp-elvira\" log --oneline)"
+    ]
+  }
+}

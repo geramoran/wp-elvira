@@ -16,7 +16,7 @@ class Plugin_Update_Warning {
 	 */
 	public static function instance() {
 		static $instance;
-		if ( ! is_a( $instance, get_class() ) ) {
+		if ( ! is_a( $instance, __CLASS__ ) ) {
 			$instance = new self();
 			add_action( 'admin_init', array( $instance, 'setup' ) );
 		}
